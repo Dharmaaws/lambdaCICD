@@ -1,0 +1,61 @@
+1. Version Control and Git
+What is Git, and how does it work? Can you explain the difference between a merge and rebase in Git?
+How would you handle merge conflicts in Git?
+What is the difference between git pull and git fetch?
+
+2. CI/CD and Automation
+Can you explain the concept of CI/CD? Why is it important in a DevOps pipeline?
+What tools have you worked with for CI/CD automation? For example, Jenkins, GitLab CI, CircleCI.
+How would you set up a simple CI pipeline for a Java application using Jenkins?
+What is the difference between continuous integration, continuous delivery, and continuous deployment?
+How do you ensure zero downtime during a deployment?
+
+3. Infrastructure as Code (IaC)
+What is Infrastructure as Code (IaC)? Why is it important in a DevOps environment?
+Have you worked with tools like Terraform, Ansible, or CloudFormation? How do they compare to each other?
+Can you describe how you would create an automated infrastructure setup using Terraform?
+What are the benefits and drawbacks of using a tool like Ansible over manual configuration?
+
+4. Containerization and Orchestration
+What is Docker, and how does it help in a DevOps pipeline?
+Explain the difference between a Docker container and a virtual machine.
+Have you worked with Kubernetes? Can you describe how Kubernetes helps manage Docker containers in a production environment?
+How would you handle logging and monitoring in a Kubernetes environment?
+
+5. Cloud Platforms
+Have you worked with cloud platforms like AWS, Azure, or GCP? What services have you used?
+What is the difference between IaaS, PaaS, and SaaS?
+Can you explain how you would set up a scalable architecture in AWS using services like EC2, S3, and RDS?
+
+6. Monitoring and Logging
+How do you monitor the performance of applications and servers? Have you worked with tools like Prometheus, Grafana, or Nagios?
+What is the role of logging in DevOps? Which tools have you used for log management?
+How do you approach alerting for critical systems? What is the strategy for creating useful alerts?
+
+7. Configuration Management
+What is the role of configuration management tools in a DevOps environment? Have you used any tools like Ansible, Chef, or Puppet?
+How would you handle a situation where a configuration change leads to service failure?
+Can you give an example of how you’ve used configuration management to ensure consistency across multiple servers?
+
+8. Security in DevOps
+What is DevSecOps, and why is it important?
+Can you explain how you would automate security checks in the CI/CD pipeline?
+What are some best practices for securing the infrastructure in a DevOps environment?
+
+9. Automation and Scripting
+Can you write a simple shell script to automate a common task such as backing up a directory or starting a service?
+How do you automate infrastructure provisioning using scripting or tools like Ansible, Terraform, or AWS CLI?
+
+10. Troubleshooting and Debugging
+How would you troubleshoot a failed Jenkins pipeline?
+Describe a situation where a deployment went wrong. How did you handle the incident, and what steps did you take to resolve it?
+How do you troubleshoot a slow-performing application in a production environment?
+
+11. Collaboration and Communication
+How do you ensure effective collaboration between development, operations, and QA teams in a DevOps setup?
+Can you describe a time when you worked with cross-functional teams to resolve an issue in a production environment?
+
+12. General DevOps Knowledge
+What are the key principles of DevOps, and how do you apply them in practice?
+How do you handle scaling issues when traffic to your application spikes suddenly?
+Can you explain the concept of "Infrastructure as Code" (IaC) and its benefits?

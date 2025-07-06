@@ -1,0 +1,33 @@
+git config --global user.email "dharmanathan8@gmail.com" 
+
+git config --global user.name "dharmaaws"
+
+
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIDFjRU7lWZmxSXoSAG1ykz2wLr0FC5E2RRq8cqYFYQ4W south@JD
+
+
+Virtul box network enabled
+--------------------------------
+nmcli device  #to check the adapter name
+nmcli connection modify enp0s3 ipv4.addresses 192.168.1.70/24
+nmcli connection modify enp0s3 ipv4.method manual
+nmcli connection down enp0s3
+nmcli connection up enp0s3
+nmcli device show enp0s3
+
+
+/ - parent directory  
+/etc - it maintains configuration files 
+/boot - bootable information (GRUB - grand unified bootloader)
+/mnt - temporary mount point 
+/home - normal user working directory
+/root - root user working directory
+/bin - normal user command 
+/sbin - admin user command 
+/var - maintains logs 
+/dev - device information 
+/proc - processor information 
+/usr - it maintains source code (like program files)
+/opt - 3rd party apps (tomcat, db) - downloads
+/tmp - temporary files 
+/lib - library informations

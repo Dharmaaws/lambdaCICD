@@ -1,0 +1,5 @@
+https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-25.4.0.105899.zip
+
+yum install java-11-openjdk -y
+
+sudo amazon-linux-extras install java-openjdk11

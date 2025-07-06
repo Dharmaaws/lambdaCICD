@@ -1,0 +1,12 @@
+Designed, deployed, and managed Kubernetes clusters on AWS cloud platform.
+Automated deployment processes using CI/CD pipelines to streamline and accelerate development cycles.
+Diagnosed and resolved issues related to Kubernetes clusters, application deployments, and network configurations.
+Provided technical support and guidance to development teams for Kubernetes-related challenges and best practices.
+ 
+Created and maintained comprehensive documentation for Kubernetes infrastructure, deployment procedures, and operational guidelines.
+Developed and maintained infrastructure as code (IaC) using Terraform to provision and manage cloud resources
+Created and managed Terraform modules to enable reusable and scalable infrastructure components, ensuring consistency and reducing duplication of code.
+Managed multiple environments with Terraform to ensure consistency and isolation between environments.
+Implemented and maintained Terraform workspaces and state files to handle environment-specific configurations and state management.
+Provision, configure, and maintain AWS infrastructure resources, including EC2 instances, S3 buckets, and VPCs
+Designed and implemented AWS Auto Scaling solutions for EC2 instance

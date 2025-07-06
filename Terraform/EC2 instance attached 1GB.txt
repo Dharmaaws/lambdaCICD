@@ -1,0 +1,76 @@
+resource "aws_instance" "web-server" {
+  ami= "ami-01eb4eefd88522422"
+  instance_type = "t2.micro"
+  key_name = "Testing"
+  security_groups = ["Test1"]
+  tags = {
+    name = "linux"
+    env = "prod"
+  }
+}
+resource "aws_ebs_volume" "Volume" {
+  availability_zone = "us-west-1a"
+  size = 1
+
+  tags = {
+    name = "1GB Added"
+  }
+}
+
+resource "aws_volume_attachment" "ebs_attach" {
+  device_name = "/dev/xvdf"
+  instance_id = "i-094b8ef22333e564e"
+  volume_id   = "vol-089457ee9ed5f8e11"
+}
+
+
+
+1260732884
+
+
+	Monitor AWS environments for performance, availability, and security using AWS CloudWatch, CloudTrail, and other monitoring tools.
+
+	Implemented and maintained version control systems (Git) for source code management.
+
+	Integrated Jenkins with version control systems (Git), automating code deployment and ensuring version control best practices.
+
+
+
+Evolutionary IT Professional with 6 years of diverse experience | From Desktop Support to System Administration and now thriving as a DevOps Engineer | Expertise in Continuous Integration, Deployment | Actively seeking new opportunities in DevOps and Cloud Technologies
+
+
+Hitachi Energy Technology Service Private Limited
+
+d6fbf38086d14bb3bad978ac5e5a2344
+
+
+
+IAC - Desgin and dev to module Resource blk - based on env to define and proving 
+Var.tf
+
+
+local block using multiple env 
+
+Terraform import - Import block comment 
+
+How to push --- Source code in stored in Git lab 
+
+
+Cloud workspace --- lot of repo git lab intragte (Repo ----Source adding hit lab URL)
+
+Autoscalling - 60 % Automattically desired capacity 3 max 20 Autoscaling
+Code pipeline - life cycle hook - to enable the code deploy 
+
+datadog - montoring tool easy intrgation console key get from management team 
+
+
+KMS
+Serverless arct - Lamda - application team only using this feature 
+
+Lamda - role based access 
+
+
+Patching schedule - Automatic 
+
+EBS volume snapshat 
+lampda 
