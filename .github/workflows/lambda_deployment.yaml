@@ -9,18 +9,27 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
-      - name: Install zip tool
-        uses: montudor/action-zip@v1
-      - name: Create Zip file for Lambda function
-        run: zip -r code.zip .
-      - name: AWS CLI v2
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Install zip (native)
+        run: sudo apt-get install zip -y
+
+      - name: Create zip for Lambda
+        run: |
+          mkdir package
+          cp -r src/* lambda_function.py package/       # Replace `src/` with your actual code folder
+          cd package
+          zip -r ../code.zip .
+
+      - name: Deploy to Lambda
         uses: imehedi/actions-awscli-v2@latest
         with:
-          args: "lambda update-function-code \
-            --function-name arn:aws:lambda:us-east-1:655840553651:function:Today \
-            --zip-file fileb://code.zip"
+          args: |
+            lambda update-function-code \
+              --function-name Today \
+              --zip-file fileb://code.zip
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          AWS_DEFAULT_REGION: "us-east-1"
+          AWS_DEFAULT_REGION: us-east-1
