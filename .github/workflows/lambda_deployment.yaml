@@ -12,13 +12,13 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Install zip (native)
+      - name: Install zip tool
         run: sudo apt-get install zip -y
 
-      - name: Create zip for Lambda
+      - name: Package Lambda code
         run: |
           mkdir package
-          cp -r src/* lambda_function.py package/       # Replace `src/` with your actual code folder
+          cp src/lambda_function.py package/
           cd package
           zip -r ../code.zip .
 
